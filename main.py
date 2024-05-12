@@ -20,8 +20,8 @@ def save_file(event):
 def close(event):
     if event.keysym == "q" and event.state & 0x4:
         result = tkinter.messagebox.askyesno("Quitting", "Quit?")
-            if result:
-                exit()
+        if result:
+            exit()
                 
 def main():
     screen = tkinter.Tk()
