@@ -33,7 +33,7 @@ def main():
     screen.bind("<Control-q>", close)
     textbox = tkinter.Text(screen, insertbackground="grey", height=620, width=520)
     textbox.configure(bg="#232323", fg="#FFFFFF")
-    textbox.insert(tkinter.END, "Controls: ctrl-s to save, ctrl-o to open file, ctrl-q to quit :)")
+    textbox.insert(tkinter.END, "# Controls: ctrl-s to save, ctrl-o to open file, ctrl-q to quit :)")
     textbox.pack()
     screen.mainloop()
 
