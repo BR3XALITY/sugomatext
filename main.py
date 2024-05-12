@@ -16,15 +16,22 @@ def save_file(event):
         with open(file_path, "w") as file:
             file.write(textbox.get("1.0", "end-1c"))
             file.close()
-            
+
+def close(event):
+    if event.keysym == "q" and event.state & 0x4:
+        result = tkinter.messagebox.askyesno("Quitting", "Quit?")
+            if result:
+                exit()
+                
 def main():
     screen = tkinter.Tk()
     screen.title("vvipertext")
     screen.geometry("1080x720")
     file_path = ""
     screen.bind("<Control-o>", open_dialog_open)
-    screen.bind("<Control-s>", save_file)    
-    textbox = tkinter.Text(screen, height=620, width=520)
+    screen.bind("<Control-s>", save_file)
+    screen.bind("<Control-q>", close)
+    textbox = tkinter.Text(screen, insertbackground="grey", height=620, width=520)
     textbox.configure(bg="#232323", fg="#FFFFFF")
     textbox.pack()
     screen.mainloop()
