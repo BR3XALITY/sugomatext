@@ -23,10 +23,6 @@ def close(event):
         if result:
             exit()
 
-def show_controls(event):
-    if event.keysym == "j" and event.state & 0x4:
-        textbox.insert(tkinter.END, "# Controls: ctrl-s to save, ctrl-o to open file, ctrl-q to quit, ctrl-j to show controls :)")
-                
 def main():
     screen = tkinter.Tk()
     screen.title("vvipertext")
