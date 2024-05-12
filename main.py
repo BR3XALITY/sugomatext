@@ -2,7 +2,7 @@
 import tkinter
 from tkinter import filedialog
 screen = tkinter.Tk()
-screen.title("vviper's text editor")
+screen.title("vvipertext")
 screen.geometry("1080x720")
 file_path = ""
 def open_dialog_open(event):
