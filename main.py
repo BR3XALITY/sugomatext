@@ -31,7 +31,6 @@ def main():
     screen.bind("<Control-o>", open_dialog_open)
     screen.bind("<Control-s>", save_file)
     screen.bind("<Control-q>", close)
-    screen.bind("<Control-j>", show_controls)
     textbox = tkinter.Text(screen, insertbackground="grey", height=620, width=520)
     textbox.configure(bg="#232323", fg="#FFFFFF")
     textbox.insert(tkinter.END, "# Controls: ctrl-s to save, ctrl-o to open file, ctrl-q to quit :)")
