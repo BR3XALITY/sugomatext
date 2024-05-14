@@ -59,7 +59,6 @@ def main():
     file_menu.add_command(label="Save as... (CTRL-S)", command=savefile)
     file_menu.add_command(label="Quit (CTRL-Q)", command=closequit)
     menu_bar.add_cascade(label="File", menu=file_menu)
-    menu_bar.add_cascade(label="Config", menu=conf_menu)
     global textbox
     textbox = tkinter.Text(screen, insertbackground="grey", height=52, width=620)
     textbox.configure(bg="#232323", fg="#FFFFFF")
