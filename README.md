@@ -1,2 +1,2 @@
 # vvipertext
-Text editor I made using Tk.
+## Minimal text editor using Tkinter
