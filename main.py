@@ -81,7 +81,7 @@ def main():
     config_menu = tkinter.Menu(menu_bar, tearoff=False, bg="#444444", fg="#FFFFFF")
     config_menu.add_command(label="Tab size", command=changetabsize)
     menu_bar.add_cascade(label="File", menu=file_menu)
-    global textbox
+    menu_bar.add_cascade(label="Config", menu=config_menu)
     textbox = tkinter.Text(screen, insertbackground="grey", height=80, width=620)
     textbox.configure(bg="#232323", fg="#FFFFFF")
     font = tkfont.Font(font=textbox['font'])
@@ -92,4 +92,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
