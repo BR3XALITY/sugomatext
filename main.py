@@ -60,7 +60,7 @@ def main():
     file_menu.add_command(label="Quit (CTRL-Q)", command=closequit)
     menu_bar.add_cascade(label="File", menu=file_menu)
     global textbox
-    textbox = tkinter.Text(screen, insertbackground="grey", height=52, width=620)
+    textbox = tkinter.Text(screen, insertbackground="grey", height=80, width=620)
     textbox.configure(bg="#232323", fg="#FFFFFF")
     textbox.pack()
     screen.mainloop()
