@@ -8,7 +8,7 @@ def main():
     screen = tkinter.Tk()
     screen.title("sugomatext")
     screen.geometry("1080x720")
-menu_bar = tkinter.Menu(screen, bg="#444444", fg="#FFFFFF")
+    menu_bar = tkinter.Menu(screen, bg="#444444", fg="#FFFFFF")
     screen.config(menu=menu_bar)
     file_menu = tkinter.Menu(menu_bar, tearoff=False, bg="#444444", fg="#FFFFFF")
    config_menu = tkinter.Menu(menu_bar, tearoff=False, bg="#444444", fg="#FFFFFF")
