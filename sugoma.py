@@ -3,6 +3,9 @@ import tkinter
 from tkinter import filedialog
 import tkinter.font as tkfont
 
+# Create object 
+root = Tk() 
+
 # Adjust size 
 root.geometry( "200x200" ) 
   
