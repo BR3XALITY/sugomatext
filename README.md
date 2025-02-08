@@ -1,2 +1,2 @@
-# vvipertext
-## Minimal text editor using Tkinter
+# Sugomatext
+## Tkinter Test kinda
